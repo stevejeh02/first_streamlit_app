@@ -50,8 +50,7 @@ streamlit.write('The user entered ', fruit_choice)
 
 #streamlit.text(fruityvice_response.json())
 
-
-streamlit.stop()
+#streamlit.stop()
 
 #my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 #my_cur = my_cnx.cursor()
@@ -79,6 +78,8 @@ if streamlit.button('Get Fruit Load List'):
 #my_data_row = my_cur.fetchone()
 #streamlit.header("The fruit load list contacis:")
 #streamlit.dataframe(my_data_rows)
+
+streamlit.stop()
 
 fruit_to_add = streamlit.text_input('What fruit would you like add?')
 streamlit.write('Thanks for adding ', fruit_to_add)
